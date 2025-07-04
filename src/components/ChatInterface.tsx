@@ -91,7 +91,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ grade, user, onBack, onLo
     }, 500);
   };
 
-  const handleVoiceRecording = (audioBlob: Blob) => {
+  const handleVoiceRecording = () => {
     // In a real app, you'd convert this to text using speech recognition
     handleSendMessage("I need help with my homework. Can you explain how to solve this problem?", 'voice');
   };
